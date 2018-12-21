@@ -15,12 +15,14 @@ SOBJ = $(patsubst %,$(ODIR)/%,$(_SOBJ))
 _COBJ = bcexec.o bsktmgr.o bstatemgr.o bmsghdlr.o bcui.o
 COBJ = $(patsubst %,$(ODIR)/%,$(_COBJ))
 
+all: bssvr bsclnt
 
 $(ODIR)/%.o: %.c $(DEPS)
 	$(CC) -c -o $@ $< $(CFLAGS)
 
 bssvr: $(SOBJ)
 	$(CC) -o $@ $^ $(CFLAGS) $(LIBS)
+
 bsclnt: $(COBJ)
 	$(CC) -o $@ $^ $(CFLAGS) $(LIBS)
 
