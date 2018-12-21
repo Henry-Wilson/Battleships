@@ -10,9 +10,9 @@ LIBS=-lm
 _DEPS = battleships.h
 DEPS = $(patsubst %,$(IDIR)/%,$(_DEPS))
 
-_SOBJ = bsexec.o bssktmgr.o bsstatemgr.o 
+_SOBJ = bsexec.o bsktmgr.o bstatemgr.o bmsghdlr.o 
 SOBJ = $(patsubst %,$(ODIR)/%,$(_SOBJ))
-_COBJ = bcexec.o bssktmgr.o bsstatemgr.o
+_COBJ = bcexec.o bsktmgr.o bstatemgr.o bmsghdlr.o bcui.o
 COBJ = $(patsubst %,$(ODIR)/%,$(_COBJ))
 
 
