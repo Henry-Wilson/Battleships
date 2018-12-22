@@ -3,6 +3,8 @@ executive module for the client of the battleships game
 */
 
 #include "battleships.h"
+#include <stdio.h>
+#include <unistd.h>
 
 int main(int argc, char* argv[])
 {
@@ -16,11 +18,15 @@ gsmErrNo = ClGsmInit(); /* init game state manager */
 msgErrNo = ClMsgInit(); /* init message handler */
 uiErrNo = ClUiInit(); /* init user interface */
 
+printf("hello world from bcexec\n");
+
 /* MAIN LOOP */
 while (1){
 	/*Service Socket */
 	/*Service msg hdlr */
 	/*Service GS mgr */
+	printf("hi\n");
+	sleep(1);
 }
 
 return 0;
