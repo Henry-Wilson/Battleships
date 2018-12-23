@@ -60,16 +60,22 @@ int ClMsgMain(void)
     {
       case (char)1 :
         ExComm1();
+        break;
 
       case (char)2 :
         ExComm2();
+        break;
 
       case (char)3 :
         ExComm3();
+        break;
       
       case (char)4 :
         ExComm4();
+        break;
     }
   }
+  ClGsmClearComms();
+  printf("%s\n","Cleared commands array after successful completion.");
 }
 
