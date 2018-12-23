@@ -22,11 +22,14 @@ printf("hello world from bcexec\n");
 
 /* MAIN LOOP */
 while (1){
-	/*Service Socket */
-	/*Service msg hdlr */
-	/*Service GS mgr */
-	printf("hi\n");
-	sleep(1);
+  /*Service Socket FIRST*/
+  //ClSktMain();
+  /*Service GS mgr SECOND*/
+  //ClGsmMain();
+  /*Service msg hdlr THIRD*/
+  ClMsgMain();
+  printf("hi\n");
+  sleep(1);
 }
 
 return 0;
