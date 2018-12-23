@@ -1,0 +1,19 @@
+What is a gamestate?
+	Who's turn is it to move next?
+	Where is each of the N ships on player 1's board?
+	Where is each of the N ships on player 2's board?
+	Where is each shot which player 1 has made on 2's board?
+		Coefficient: hit or miss?
+	Where is each shot which player 2 has made on 1's board?
+		Coefficient: hit or miss?
+	Board size MxN?
+--------------------------------------------------------------------------------
+What is a game model, though?
+	Who's turn is it to move next?
+	Where is each of the N ships on player 1's board?
+//note: the only line missing is the locations of 2's ships.
+	Where is each shot which player 1 has made on 2's board?
+		Coefficient: hit or miss?
+	Where is each shot which player 2 has made on 1's board?
+		Coefficient: hit or miss?
+	Board size MxN?

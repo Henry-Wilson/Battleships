@@ -10,7 +10,7 @@ int ClGsmClearComms(void); /*Clear the commands array for next use!*/
 
 char* comms[16];
 
-#define CLCOMM1 1
+#define UPDTCLNTS 1
 #define CLCOMM2 2
 #define CLCOMM3 3
 #define CLCOMM4 4

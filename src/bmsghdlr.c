@@ -46,12 +46,12 @@ int ExComm4(void)
 int ClMsgMain(void)
 {
   printf("%s\n", "Executing message handler main for client.");
-  for(int x = 0; x < 16; x = x + 1)
+  for(int x = 0; x < 16; x = x + 1) //Replace 16 with #define'ed MaxQueue from header for GameStateHandler
   {
     if(comms[x] == (char*)0)
     {
-      printf("%s", "Last command at index: ");
-      printf("%d\n", x-1);
+      printf("%s", "Reached end of list at index: ");
+      printf("%d\n", x);
       break;
     }
     printf("%s", "Found Command: ");
