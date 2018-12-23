@@ -25,10 +25,9 @@ while (1){
   /*Service Socket FIRST*/
   //ClSktMain();
   /*Service GS mgr SECOND*/
-  //ClGsmMain();
+  ClGsmMain();
   /*Service msg hdlr THIRD*/
   ClMsgMain();
-  printf("hi\n");
   sleep(1);
 }
 

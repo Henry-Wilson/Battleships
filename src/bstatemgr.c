@@ -15,7 +15,7 @@ int ClGsmMain(void)
 {
   printf("%s\n","Executing Gsm Main for Client. Commands: 1 2 3 4");
   comms[0] = (char*)1;
-  comms[1] = (char*)32;
-  comms[2] = (char*)64;
-  comms[3] = (char*)128;
+  comms[1] = (char*)2;
+  comms[2] = (char*)3;
+  comms[3] = (char*)4;
 }
